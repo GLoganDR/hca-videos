@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/hca-videos/static/css/main.c5343e6c.chunk.css",
+    "main.js": "/hca-videos/static/js/main.10ac20e2.chunk.js",
+    "main.js.map": "/hca-videos/static/js/main.10ac20e2.chunk.js.map",
+    "runtime-main.js": "/hca-videos/static/js/runtime-main.78fa9316.js",
+    "runtime-main.js.map": "/hca-videos/static/js/runtime-main.78fa9316.js.map",
+    "static/js/2.0be0ce83.chunk.js": "/hca-videos/static/js/2.0be0ce83.chunk.js",
+    "static/js/2.0be0ce83.chunk.js.map": "/hca-videos/static/js/2.0be0ce83.chunk.js.map",
+    "index.html": "/hca-videos/index.html",
+    "static/css/main.c5343e6c.chunk.css.map": "/hca-videos/static/css/main.c5343e6c.chunk.css.map",
+    "static/js/2.0be0ce83.chunk.js.LICENSE.txt": "/hca-videos/static/js/2.0be0ce83.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.78fa9316.js",
+    "static/js/2.0be0ce83.chunk.js",
+    "static/css/main.c5343e6c.chunk.css",
+    "static/js/main.10ac20e2.chunk.js"
+  ]
+}
