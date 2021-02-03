@@ -36,27 +36,23 @@ const SearchPage = (props) => {
 
     /*****Function*****
      * parameters: videos - list of all videos return from search results.
-     * Info: calls an api and get required details of each video available.
+     * Info: format data to display result list.
     */
     async function createVideoRows(videos) {
       let newVideoRows = [];
       for (const video of videos) {
         const videoId = video.id.videoId;
-        const response = await axios
-                                .get(`https://www.googleapis.com/youtube/v3/videos?part=statistics%2C%20snippet&id=${videoId}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`)
-        const views = response.data.items[0]?.statistics?.viewCount;
         const snippet = video.snippet;
         const title = snippet.title;
         const timestamp = DateTime.fromISO(snippet.publishedAt).toRelative();
         const channel = snippet.channelTitle;
         const description = snippet.description;
         const image = snippet.thumbnails.medium.url;
-                            
+
         newVideoRows.push({
           videoId,
           title,
           image,
-          views,
           timestamp,
           channel, 
           description
@@ -79,7 +75,6 @@ const SearchPage = (props) => {
                           <VideoRow
                             title={item.title}
                             image={item.image}
-                            views={item.views}
                             timestamp={item.timestamp}
                             channel={item.channel}
                             description={item.description}

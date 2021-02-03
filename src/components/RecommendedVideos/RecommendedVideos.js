@@ -40,6 +40,7 @@ const RecommendedVideos = (props) => {
     */
     useEffect(() => {
       if(playListsCurrentCount > 0 && playListsCurrentCount === totalPlayListsCount) {
+        setTotalPlayListsCount(0);
         createVideoCards(videosList);
       }
     }, [videosList,playListsCurrentCount])
@@ -48,6 +49,7 @@ const RecommendedVideos = (props) => {
      * Info: calls an api to get playlist details in a youtube channel
     */
     function getPlayListVideos() {
+      console.log("hello------------------>", getOnlyCovidVideos);
       axios
       .get(getOnlyCovidVideos ? getOnlyCovid19PlayListURL : getPlayListsURL)
       .then(response => {
@@ -65,6 +67,8 @@ const RecommendedVideos = (props) => {
      * Info: calls an api to get list of all video details in an array from an youtube channel
     */
     async function getVideosFromPlayList(playLists) {
+      setIsLoading(true);
+      setPlayListsCurrentCount(0);
       setTotalPlayListsCount(playLists.length);
       for (const playList of playLists) {
         const playListId = playList.id;
