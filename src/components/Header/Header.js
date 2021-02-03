@@ -15,12 +15,12 @@ function Header () {
           </div>
           
           <div className="header__center">
-            <Link to={`/video/covidVideos`}>
+            <Link to={`/playlist/covidVideos`}>
               <span className="pad_rt" onClick={() => setInputSearch(true)} >
                 Covid 19 Videos
               </span>
             </Link>
-            <Link to={`/video/allVideos`}>
+            <Link to={`/channel/allVideos`}>
               All Videos
             </Link>
             

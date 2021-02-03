@@ -10,7 +10,7 @@ import Alert from '@material-ui/lab/Alert';
 
 
 const RecommendedVideos = (props) => {
-    let { covidVideos } = useParams();
+    let { covidVideos, allVideos } = useParams();
     const [totalPlayListsCount, setTotalPlayListsCount] = useState(0);
     const [playListsCurrentCount, setPlayListsCurrentCount] = useState(0);
     const [videosList, setVideosList] = useState([]);
@@ -22,11 +22,11 @@ const RecommendedVideos = (props) => {
     const getOnlyCovidVideos = !!(covidVideos);
 
     /*****USEEFFECT-HOOK*****
-     * To trigger getPlayListVideos function when there is a state change in covidVideos state
+     * To trigger getPlayListVideos function when there is a state change in covidVideos, allVideos state
     */
    useEffect(() => {
     getPlayListVideos();
-  }, [covidVideos]);
+  }, [covidVideos, allVideos]);
   
     /*****USEEFFECT-HOOK*****
      * To trigger getPlayListVideos function when this component is loaded

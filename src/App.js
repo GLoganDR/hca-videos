@@ -23,7 +23,12 @@ function App() {
               <SearchPage />
             </div>
           </Route>
-          <Route path='/video/:covidVideos'>
+          <Route path='/playlist/:covidVideos'>
+            <div className="app__mainpage">
+              <RecommendedVideos />
+            </div>
+          </Route>
+          <Route path='/channel/:allVideos'>
             <div className="app__mainpage">
               <RecommendedVideos />
             </div>
