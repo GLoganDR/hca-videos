@@ -1,3 +1,15 @@
+### DEMO Hosted in github pages
+https://smit020312.github.io/hca-videos/
+
+# Note
+Need to use new api key if free tier is completed.
+exposed API_KEY for demo purpose only
+
+## TODO:
+1. Test Cases
+2. CSS cosmetic changes for better responsive design.
+3. Need to work on limiting the number of videos rendering to DOM.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
