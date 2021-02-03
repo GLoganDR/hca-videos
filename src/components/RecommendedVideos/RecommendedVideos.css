@@ -1,0 +1,18 @@
+.recommendedvideos {
+    flex: 0.8;
+    margin: 0 auto;
+}
+
+.recommendedVideos > h2 {
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.recommendedvideos__videos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recommendedvideos__videos > * {
+    margin-left: 5%;
+}
