@@ -85,7 +85,7 @@ const VideoPlayer = () => {
                 </div>
             </div>
             <div className='videoplayer__suggested'>
-                <RecommendedVideos />
+                Recomended Videos: TODO
             </div>
         </div>
     )

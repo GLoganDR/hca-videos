@@ -16,6 +16,9 @@
     flex: 0.8 1;
     margin-top: 0 !important;
     margin-right: 5px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
 }
 
 .videoplayer__videoinfo {

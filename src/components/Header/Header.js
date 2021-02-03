@@ -16,7 +16,7 @@ function Header () {
           
           <div className="header__center">
             <Link to={`/playlist/covidVideos`}>
-              <span className="pad_rt" onClick={() => setInputSearch(true)} >
+              <span className="pad_rt" onClick={() => setIsCovidLinkClicked(true)} >
                 Covid 19 Videos
               </span>
             </Link>
